@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Ingredients Stock</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="page-header">Add Ingredients Stock</div>
+
+<div class="container">
+
+  <!-- LEFT FORM -->
+  <div class="card form-card">
+    <div class="card-header">🛒 Add Ingredients Stock</div>
+    <div class="card-body">
+      <label>Item Name</label>
+      <input type="text" id="itemName">
+
+      <label>Category</label>
+      <select id="category">
+        <option value="">--Please Select--</option>
+        <option>DairyProducts</option>
+        <option>Fruits</option>
+        <option>Vegetables</option>
+        <option>Meat</option>
+        <option>Sea Food</option>
+        <option>Others</option>
+      </select>
+
+      <label>Quantity</label>
+      <input type="number" id="quantity">
+
+      <label>Date</label>
+      <input type="date" id="date">
+
+      <button class="btn-add" onclick="addItem()">Add Item</button>
+    </div>
+  </div>
+
+  <!-- RIGHT TABLE -->
+  <div class="card table-card">
+    <div class="card-header">Ingredients Stock List</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Category</th>
+          <th>Date</th>
+          <th>Quantity</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="stockTable"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
