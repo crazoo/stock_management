@@ -1,1 +1,100 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
 
+.page-header {
+  background: #607d8b;
+  color: white;
+  padding: 14px 20px;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+}
+
+.form-card {
+  width: 320px;
+}
+
+.card-header {
+  background: #607d8b;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+label {
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.btn-add {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #5cb85c;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.table-card {
+  flex: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 14px;
+}
+
+table th {
+  background: #f2f2f2;
+}
+
+.btn-update {
+  background: #337ab7;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
