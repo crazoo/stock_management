@@ -1,9 +1,9 @@
 let stock = JSON.parse(localStorage.getItem("stockData")) || [
-  {name:"Cream", category:"DairyProducts", date:"2021-07-19", qty:18},
-  {name:"Blueberries", category:"Fruits", date:"2021-07-19", qty:11},
-  {name:"Broccoli", category:"Vegetables", date:"2021-07-19", qty:27},
-  {name:"Beef", category:"Meat", date:"2021-07-19", qty:36},
-  {name:"Mozzarella", category:"DairyProducts", date:"2021-07-18", qty:21}
+  {name:"Table", category:"Furniture", date:"2021-07-19", qty:18},
+  {name:"Chair", category:"Furniture", date:"2021-07-19", qty:11},
+  {name:"Computer", category:"Electronic", date:"2021-07-19", qty:27},
+  {name:"Board", category:"Equipments", date:"2021-07-19", qty:36},
+  {name:"Fan", category:"Electric", date:"2021-07-18", qty:21}
 ];
 
 const table = document.getElementById("stockTable");
@@ -20,7 +20,7 @@ function render() {
       <td contenteditable="true" onblur="edit(${index},'name',this.innerText)">${item.name}</td>
       <td>
         <select onchange="edit(${index},'category',this.value)">
-          ${['DairyProducts','Fruits','Vegetables','Meat','Sea Food','Others']
+          ${['Furniture','Electronic','Equipments','Electric','Others']
             .map(c => `<option ${c===item.category?'selected':''}>${c}</option>`)
             .join('')}
         </select>
